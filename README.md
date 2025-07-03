@@ -2,6 +2,11 @@
 
 Este repositório contém implementações de estruturas de dados clássicas utilizando Python, com foco em aprendizado, eficiência e compreensão dos fundamentos da Ciência da Computação. Cada estrutura foi desenvolvida do zero, sem uso de bibliotecas externas, buscando compreender profundamente seu funcionamento interno.
 
+Para cada estrutura, o repositório inclui:
+
+* Uma versão **clean**, enxuta, ideal para uso direto em outros projetos
+* Uma versão **documentada**, com explicações passo a passo e docstrings educativas
+
 ## Estruturas implementadas
 
 ### 📁 pilha\_array/
@@ -17,7 +22,8 @@ Implementação de uma **Pilha (Stack)** utilizando uma lista nativa do Python.
 
 * Arquivos:
 
-  * `stack.py`: implementação da pilha
+  * `stack.py`: versão clean da pilha
+  * `stack_doc.py`: versão documentada da pilha
   * `test_stack.py`: testes com asserts para validar o comportamento
 
 ### 📁 fila\_linkedlist/
@@ -36,8 +42,10 @@ Implementação de uma **Fila (Queue)** baseada em **lista encadeada (linked lis
 
 * Arquivos:
 
-  * `node.py`: classe Node
-  * `llqueue.py`: implementação da fila
+  * `node.py`: versão clean da classe Node
+  * `node_doc.py`: versão documentada da classe Node
+  * `llqueue.py`: versão clean da fila
+  * `llqueue_doc.py`: versão documentada da fila
   * `test_llqueue.py`: testes para a fila encadeada
 
 ---
