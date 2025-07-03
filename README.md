@@ -71,9 +71,9 @@ python test_llqueue.py
 
 ## Autor
 
-Francisco Goya
-Estudante de Análise e Desenvolvimento de Sistemas
-GitHub: [@FranciscoGoyaAMC](https://github.com/FranciscoGoyaAMC)
+Francisco Goya  
+Estudante de Análise e Desenvolvimento de Sistemas  
+GitHub: [@FranciscoGoyaAMC](https://github.com/FranciscoGoyaAMC)  
 LinkedIn: [Francisco Goya](https://www.linkedin.com/in/francisco-goya-de-almeida-martins-costa-0a8ab9327/)
 
 Sinta-se à vontade para explorar, sugerir melhorias ou contribuir! 🚀
