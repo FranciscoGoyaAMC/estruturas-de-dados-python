@@ -48,6 +48,32 @@ Implementação de uma **Fila (Queue)** baseada em **lista encadeada (linked lis
   * `llqueue_doc.py`: versão documentada da fila
   * `test_llqueue.py`: testes para a fila encadeada
 
+### 📁 binary_search_tree/
+
+Implementação de uma **Árvore Binária de Busca (BST)** com suporte para usuários personalizados com IDs únicos.
+
+* Estrutura:
+
+  * `BSTNode`: representa um nó da árvore
+  * `User`: classe para gerar usuários com nome e ID
+
+* Operações da BST:
+
+  * `insert`: insere valores mantendo a propriedade da BST
+  * `delete`: remove valores da árvore
+  * `exists`: verifica a existência de um valor
+  * `get_min` / `get_max`: retorna o menor/maior valor
+  * `preorder`, `inorder`, `postorder`: diferentes formas de percorrer a árvore
+  * `height`: retorna a altura da árvore
+
+* Arquivos:
+
+  * `bst_node.py`: versão clean da BST
+  * `bst_node_doc.py`: versão documentada da BST
+  * `user.py`: versão clean da classe User
+  * `user_doc.py`: versão documentada da classe User
+  * `test_bst.py`: testes para a árvore binária de busca
+
 ---
 
 ## Como executar os testes
@@ -60,6 +86,9 @@ python test_stack.py
 
 cd ../fila_linkedlist
 python test_llqueue.py
+
+cd ../binary_search_tree
+python test_bst.py
 ```
 
 ---
@@ -70,7 +99,6 @@ python test_llqueue.py
 * Desenvolver implementações eficientes e didáticas
 * Servir como base para futuras estruturas mais complexas:
 
-  * ✅ Árvores Binárias
   * ✅ Hashmaps
   * ✅ Grafos
   * ✅ Árvores Red-Black
