@@ -48,7 +48,7 @@ Implementação de uma **Fila (Queue)** baseada em **lista encadeada (linked lis
   * `llqueue_doc.py`: versão documentada da fila
   * `test_llqueue.py`: testes para a fila encadeada
 
-### 📁 binary_search_tree/
+### 📁 binary\_search\_tree/
 
 Implementação de uma **Árvore Binária de Busca (BST)** com suporte para usuários personalizados com IDs únicos.
 
@@ -74,6 +74,32 @@ Implementação de uma **Árvore Binária de Busca (BST)** com suporte para usu�
   * `user_doc.py`: versão documentada da classe User
   * `test_bst.py`: testes para a árvore binária de busca
 
+### 📁 red\_black\_tree/
+
+Implementação de uma **Árvore Rubro-Negra (Red-Black Tree)**, uma árvore binária de busca auto-balanceada que garante inserções, buscas e remoções eficientes em tempo logarítmico.
+
+* Estrutura:
+
+  * `RBNode`: representa um nó com cor (vermelho ou preto)
+  * `RBTree`: estrutura da árvore com regras específicas de balanceamento
+
+* Funcionalidades:
+
+  * Inserção de valores com balanceamento automático
+  * Correção de violação das propriedades rubro-negras após inserção
+  * Suporte ao nó sentinela (`nil`) para facilitar balanceamento
+
+* Arquivos:
+
+  * `rb_node.py`: versão clean da classe de nós da árvore rubro-negra
+  * `rb_node_doc.py`: versão documentada com explicações e docstrings
+  * `rb_tree.py`: versão clean da árvore
+  * `rb_tree_doc`: versão documentada com explicações passo a passo
+  * `user.py`: versão clean da classe User
+  * `user_doc.py`: versão documentada da classe User
+  * `test_bst.py`: testes para a árvore
+
+
 ---
 
 ## Como executar os testes
@@ -89,6 +115,9 @@ python test_llqueue.py
 
 cd ../binary_search_tree
 python test_bst.py
+
+cd ../red_black_tree
+python test_rb_tree.py
 ```
 
 ---
@@ -99,17 +128,16 @@ python test_bst.py
 * Desenvolver implementações eficientes e didáticas
 * Servir como base para futuras estruturas mais complexas:
 
-  * ✅ Hashmaps
-  * ✅ Grafos
-  * ✅ Árvores Red-Black
+  * ⏳ Hashmaps
+  * ⏳ Grafos
 
 ---
 
 ## Autor
 
-Francisco Goya  
-Estudante de Análise e Desenvolvimento de Sistemas  
-GitHub: [@FranciscoGoyaAMC](https://github.com/FranciscoGoyaAMC)  
+Francisco Goya
+Estudante de Análise e Desenvolvimento de Sistemas
+GitHub: [@FranciscoGoyaAMC](https://github.com/FranciscoGoyaAMC)
 LinkedIn: [Francisco Goya](https://www.linkedin.com/in/francisco-goya-de-almeida-martins-costa-0a8ab9327/)
 
 Sinta-se à vontade para explorar, sugerir melhorias ou contribuir! 🚀

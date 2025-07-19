@@ -4,7 +4,6 @@ class BSTNode:
         self.right = None
         self.val = val
 
-
     def insert(self, val):
         if not self.val:
             self.val = val
@@ -22,13 +21,11 @@ class BSTNode:
             else:
                 self.right.insert(val)
 
-
     def get_min(self):
         node = self
         while node.left:
             node = node.left
-        return node.val
-            
+        return node.val         
 
     def get_max(self):
         node = self
@@ -36,7 +33,6 @@ class BSTNode:
             node = node.right
         return node.val
     
-
     def delete(self, val):
         if self.val is None:
             return None
@@ -56,8 +52,7 @@ class BSTNode:
             successor = self.right.get_min()
             self.val = successor
             self.right = self.right.delete(successor)
-            return self
-        
+            return self     
 
     def preorder(self, visited):
         visited.append(self.val)
@@ -66,7 +61,6 @@ class BSTNode:
         if self.right:
             self.right.preorder(visited)
         return visited
-    
 
     def postorder(self, visited):
         if self.left:
@@ -74,8 +68,7 @@ class BSTNode:
         if self.right:
             self.right.postorder(visited)
         visited.append(self.val)
-        return visited
-    
+        return visited  
 
     def inorder(self, visited):
         if self.left:
@@ -84,7 +77,6 @@ class BSTNode:
         if self.right:
             self.right.inorder(visited)
         return visited
-
 
     def exists(self, val):
         if self.val == val:
@@ -95,7 +87,6 @@ class BSTNode:
             return self.right.exists(val)
         return False
     
-
     def height(self):
         if self.val is None:
             return 0

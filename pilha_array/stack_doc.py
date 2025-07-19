@@ -13,7 +13,7 @@ class Stack:
         """
         Inicializa uma pilha vazia.
         """
-        self.items = [] # Inicializa a lista que armazenará os itens da pilha.
+        self.items = []  # Inicializa a lista que armazenará os itens da pilha.
 
     def push(self, item):
         """
@@ -22,7 +22,7 @@ class Stack:
         Args:
             item: O item a ser inserido na pilha.
         """
-        self.items.append(item) # Adiciona o item ao final da lista, que representa o topo da pilha.
+        self.items.append(item)  # Adiciona o item ao final da lista, que representa o topo da pilha.
 
     def size(self):
         """
@@ -31,7 +31,7 @@ class Stack:
         Returns:
             int: O número de itens na pilha.
         """
-        return len(self.items) # Retorna o comprimento da lista que contém os itens da pilha.
+        return len(self.items)  # Retorna o comprimento da lista que contém os itens da pilha.
 
     def peek(self):
         """
@@ -41,8 +41,8 @@ class Stack:
             O item do topo da pilha, ou None se a pilha estiver vazia.
         """
         if self.items:  # Verifica se a pilha não está vazia.
-            return self.items[-1] # Retorna o último item da lista, que é o topo da pilha.
-        return None # Se a pilha estiver vazia, retorna None.
+            return self.items[-1]  # Retorna o último item da lista, que é o topo da pilha.
+        return None  # Se a pilha estiver vazia, retorna None.
 
     def pop(self):
         """

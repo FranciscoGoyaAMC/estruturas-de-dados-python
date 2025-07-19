@@ -1,6 +1,3 @@
-from node import Node
-
-
 class LLQueue:
     def remove_from_head(self):
         if self.head is None:
@@ -12,7 +9,6 @@ class LLQueue:
         temp_node.set_next(None)
         return temp_node
 
-
     def add_to_tail(self, node):
         if self.head is None:
             self.head = node
@@ -21,18 +17,15 @@ class LLQueue:
         self.tail.set_next(node)
         self.tail = node
 
-
     def __init__(self):
         self.tail = None
         self.head = None
-
 
     def __iter__(self):
         node = self.head
         while node is not None:
             yield node
             node = node.next
-
 
     def __repr__(self):
         nodes = []

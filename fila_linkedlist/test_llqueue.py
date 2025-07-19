@@ -1,6 +1,7 @@
 from node import Node
 from llqueue import LLQueue
 
+
 def test_llqueue_operations():
     fila = LLQueue()
 
@@ -21,5 +22,7 @@ def test_llqueue_operations():
 
     print("Todos os testes de fila passaram!")
 
+
 if __name__ == "__main__":
     test_llqueue_operations()
+    

@@ -11,7 +11,7 @@ class Node:
         set_next(node): Define o próximo nó da lista.
         __repr__(): Retorna uma representação em string do valor do nó.
     """
-    
+
     def __init__(self, val):
         """
         Inicializa um novo nó.
@@ -22,7 +22,6 @@ class Node:
         self.val = val          # Armazena o valor passado como argumento.
         self.next = None        # Inicialmente, o próximo nó é None.
 
-
     def set_next(self, node):
         """
         Define o próximo nó da lista.
@@ -32,7 +31,6 @@ class Node:
         """
         self.next = node        # Atualiza o ponteiro next para o novo nó.
 
-
     def __repr__(self):
         """
         Retorna uma representação em string do valor do nó.
@@ -41,3 +39,4 @@ class Node:
             str: O valor armazenado no nó.
         """
         return self.val         # Retorna o valor do nó como string.
+    

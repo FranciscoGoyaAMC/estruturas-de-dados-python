@@ -1,6 +1,3 @@
-from node import Node # Importa a classe Node do módulo node
-
-
 class LLQueue:
     """
     Fila (Queue) baseada em lista encadeada (Linked List).
@@ -18,7 +15,6 @@ class LLQueue:
         self.tail = None
         self.head = None
 
-
     def add_to_tail(self, node):
         """
         Adiciona um nó ao final da fila.
@@ -33,7 +29,6 @@ class LLQueue:
 
         self.tail.set_next(node)  # Se a fila não estiver vazia, define o próximo nó da cauda atual para o novo nó
         self.tail = node  # Atualiza a cauda para o novo nó adicionado
-
 
     def remove_from_head(self):
         """
@@ -51,7 +46,6 @@ class LLQueue:
         temp_node.set_next(None)  # Limpa o próximo do nó temporário para evitar referências circulares.
         return temp_node  # Retorna o nó removido
 
-
     def __iter__(self):
         """
         Permite iteração sobre os nós da fila.
@@ -63,7 +57,6 @@ class LLQueue:
         while node is not None:  # Itera sobre os nós da fila, começando pela cabeça.
             yield node
             node = node.next  # Move para o próximo nó na fila.
-
 
     def __repr__(self):
         """

@@ -2,6 +2,7 @@ import unittest
 from bst_node import BSTNode
 from user import User, get_users
 
+
 class TestBSTNode(unittest.TestCase):
     def setUp(self):
         self.bst = BSTNode()
@@ -38,6 +39,7 @@ class TestBSTNode(unittest.TestCase):
         self.assertIsInstance(h, int)
         self.assertGreaterEqual(h, 1)
 
+
 def test_delete_leaf(self):
     leaf = self.users[0]
     self.assertTrue(self.bst.exists(leaf))
@@ -50,6 +52,7 @@ def test_delete_root(self):
     self.assertTrue(self.bst.exists(root_val))
     self.bst = self.bst.delete(root_val)
     self.assertFalse(self.bst.exists(root_val))
+
 
 if __name__ == "__main__":
     unittest.main()
