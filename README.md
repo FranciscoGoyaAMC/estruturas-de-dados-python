@@ -146,6 +146,30 @@ Implementação de uma **Trie (Árvore de Prefixos)** eficiente para busca, inse
   * `tries_doc.py`: versão documentada da trie
   * `test_tries.py`: testes para a trie
 
+
+### 📁 graphs/
+
+Implementação de um **Grafo não direcionado** usando dicionário de adjacências para representar conexões entre vértices.
+
+* Estrutura:
+
+  * `Graph`: classe principal do grafo
+
+* Operações:
+
+  * `add_edge`: adiciona uma aresta entre dois vértices
+  * `edge_exists`: verifica se existe uma aresta entre dois vértices
+  * `breadth_first_search`: busca em largura (BFS)
+  * `depth_first_search`: busca em profundidade (DFS)
+  * `unconnected_vertices`: lista vértices sem conexões
+  * `__repr__`: visualização das conexões do grafo
+
+* Arquivos:
+
+  * `graph.py`: versão clean do grafo
+  * `graph_doc.py`: versão documentada do grafo
+  * `test_graph.py`: testes para o grafo
+
 ----
 
 ## Como executar os testes
@@ -170,6 +194,9 @@ python test_hashmap.py
 
 cd ../tries
 python test_tries.py
+
+cd ../graphs
+python test_graph.py
 ```
 
 ---
