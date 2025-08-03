@@ -153,7 +153,7 @@ Implementação de uma **Trie (Árvore de Prefixos)** eficiente para busca, inse
 Acesse cada pasta e execute o arquivo de teste correspondente:
 
 ```bash
-cd pilha_array
+cd ../pilha_array
 python test_stack.py
 
 cd ../fila_linkedlist
