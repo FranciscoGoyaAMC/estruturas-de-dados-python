@@ -99,6 +99,29 @@ Implementação de uma **Árvore Rubro-Negra (Red-Black Tree)**, uma árvore bin
   * `user_doc.py`: versão documentada da classe User
   * `test_bst.py`: testes para a árvore
 
+### 📁 hashmaps/
+
+Implementação de uma **Tabela Hash (HashMap)** com tratamento de colisão por sondagem linear, redimensionamento dinâmico e remoção lógica (tombstone).
+
+* Estrutura:
+
+  * `HashMap`: classe principal da tabela hash
+  * `User`: classe para armazenar objetos customizados como valor
+
+* Operações:
+
+  * `insert`: insere ou atualiza um par chave-valor
+  * `get`: busca o valor associado a uma chave
+  * `delete`: remove logicamente um par chave-valor
+  * `resize`: redimensionamento automático conforme a carga
+
+* Arquivos:
+
+  * `hashmap.py`: versão clean da tabela hash
+  * `hashmap_doc.py`: versão documentada da tabela hash
+  * `user.py`: versão clean da classe User
+  * `user_doc.py`: versão documentada da classe User
+  * `test_hashmap.py`: testes para a tabela hash
 
 ---
 
@@ -118,6 +141,9 @@ python test_bst.py
 
 cd ../red_black_tree
 python test_rb_tree.py
+
+cd ../hashmaps
+python test_hashmap.py
 ```
 
 ---
@@ -126,10 +152,6 @@ python test_rb_tree.py
 
 * Consolidar o conhecimento prático em estruturas de dados
 * Desenvolver implementações eficientes e didáticas
-* Servir como base para futuras estruturas mais complexas:
-
-  * ⏳ Hashmaps
-  * ⏳ Grafos
 
 ---
 
