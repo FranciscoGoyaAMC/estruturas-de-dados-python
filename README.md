@@ -123,7 +123,30 @@ Implementação de uma **Tabela Hash (HashMap)** com tratamento de colisão por 
   * `user_doc.py`: versão documentada da classe User
   * `test_hashmap.py`: testes para a tabela hash
 
----
+### 📁 tries/
+
+Implementação de uma **Trie (Árvore de Prefixos)** eficiente para busca, inserção e análise de palavras e prefixos.
+
+* Estrutura:
+
+  * `Trie`: classe principal da árvore de prefixos
+
+* Operações:
+
+  * `add`: insere uma palavra no trie
+  * `exists`: verifica se uma palavra existe
+  * `words_with_prefix`: retorna todas as palavras com determinado prefixo
+  * `find_matches`: encontra todas as substrings de um texto presentes no trie
+  * `advanced_find_matches`: busca substrings considerando variações de caracteres
+  * `longest_common_prefix`: retorna o maior prefixo comum entre todas as palavras
+
+* Arquivos:
+
+  * `tries.py`: versão clean da trie
+  * `tries_doc.py`: versão documentada da trie
+  * `test_tries.py`: testes para a trie
+
+----
 
 ## Como executar os testes
 
@@ -144,6 +167,9 @@ python test_rb_tree.py
 
 cd ../hashmaps
 python test_hashmap.py
+
+cd ../tries
+python test_tries.py
 ```
 
 ---
